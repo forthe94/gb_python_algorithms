@@ -7,7 +7,7 @@
 import random
 import sys
 
-SIZE = 15
+SIZE = 1000
 MIN_ITEM = -1000
 MAX_ITEM = 1000
 array = [random.randint(MIN_ITEM, MAX_ITEM) for _ in range(SIZE)]
@@ -23,4 +23,4 @@ for pos, elem in enumerate(array):
             max_pos = pos
 
 print(max_element)
-print(pos)
+print(max_pos)
