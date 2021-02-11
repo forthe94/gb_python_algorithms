@@ -7,7 +7,7 @@ import random
 
 M = 2
 N = 2 * M + 1
-array = [random.randint(-100, 100) for _ in range(N)]
+array = [1, 3, 0, -4, 2, 2, -2, 6, -9, 6, 10, 2, -3, -9, 8]
 
 
 def partition(arr, l, r):
@@ -56,6 +56,7 @@ def kthSmallest(arr, l, r, k):
 print(array)
 # Driver Code
 n = len(array)
-k = n // 2
+k = n // 2 + 1
 print("Медиана равна ", end="")
 print(kthSmallest(array, 0, n - 1, k))
+
